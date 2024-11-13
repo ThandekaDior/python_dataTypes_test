@@ -57,6 +57,8 @@ def create_new_tuple(t):
     Return:
     - The new tuple with the first two elements.
     """
+    tuple = t[:2]
+    return tuple
     pass
 
 
@@ -68,7 +70,10 @@ def check_if_value_exists(t, value):
     Return:
     - True if the value exists, otherwise False.
     """
-    pass
+    for i in t:
+        if i == value:
+            return True
+    #pass
 
 
 def find_intersection(set1, set2):

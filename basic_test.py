@@ -32,9 +32,10 @@ def combine_operations():
     Return:
     - The combined result (float).
     """
-    division = float(int_division)
-    multiplication = float(float_multiplication)
-    return division + multiplication
+    division = int_division()
+    multiplication = float_multiplication()
+    result = division + multiplication/2
+    return result
 
 
 def extract_word():
